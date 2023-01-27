@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12683600732",
+    "firebase_url": "https://urban-guide-941a0-default-rtdb.firebaseio.com",
+    "project_id": "urban-guide-941a0",
+    "storage_bucket": "urban-guide-941a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12683600732:android:cf677b0d6a1fd4e08ed799",
+        "android_client_info": {
+          "package_name": "com.example.urbanguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12683600732-u2sd73hbv53ia8b3me0mgjrvut3l4vij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.urbanguide",
+            "certificate_hash": "28e0d1296e2f14f969d1a73e91f7767158b86d90"
+          }
+        },
+        {
+          "client_id": "12683600732-qioj99vd7rungtbjn40g892mestnu9dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkt_x_ztPhQk7vu9LR9Oucr8vDQxsA0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12683600732-qioj99vd7rungtbjn40g892mestnu9dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

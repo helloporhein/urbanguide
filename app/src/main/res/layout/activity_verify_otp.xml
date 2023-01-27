@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_OTP_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/PinTheme"
+    android:background="@color/colorPrimary"
+    android:transitionName="transition_OTP_screen"
+    tools:context=".Common.LoginSignup.VerifyOTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/general_close_icon"
+            android:padding="5dp"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_code_text"
+            android:textSize="100sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_verification_text"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_description_text"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/phoneNo_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_phonenumber_text"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:hint="Hint."
+            android:inputType="number"
+            android:itemBackground="@color/light_white"
+            app:cursorColor="@color/black"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="2dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/black"
+            app:lineWidth="2dp"
+            app:viewType="rectangle"/>
+
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/verify_code"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/verify_password_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/next_btn"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>

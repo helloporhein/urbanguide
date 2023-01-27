@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.LoginSignup.MakeSelection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/general_back_icon"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_nselection"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_selection_detail"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="10dp"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:layout_marginTop="50dp"
+           android:background="@color/light_white"
+           android:padding="10dp">
+
+           <ImageView
+               android:id="@+id/mobile_icon"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/mobile_icon"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="20dp"/>
+
+           <TextView
+               android:id="@+id/mobile_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/via_sms"
+               android:textSize="25sp"
+               android:fontFamily="sans-serif-medium"
+               android:layout_toEndOf="@id/mobile_icon"
+               android:layout_marginTop="35dp"/>
+
+           <TextView
+               android:id="@+id/mobile_des"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="+959799760945"
+               android:textSize="25sp"
+               android:textColor="@color/black"
+               android:fontFamily="sans-serif-medium"
+               android:layout_toEndOf="@id/mobile_icon"
+               android:layout_below="@id/mobile_title" />
+
+           <Button
+               android:id="@+id/makeselect_sms_btn"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/transparent" />
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_email_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/via_sms"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_toEndOf="@id/email_icon"
+                android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:id="@+id/email_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="support@gmail.com"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_toEndOf="@id/email_icon"
+                android:layout_below="@id/email_title" />
+
+            <Button
+                android:id="@+id/makeselect_email_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
